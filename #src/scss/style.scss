@@ -41,6 +41,7 @@ body {
 	&._lock {
 		overflow: hidden;
 	}
+	background: #f2f2f2;
 }
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
@@ -92,69 +93,18 @@ body {
 .page {
 	flex: 1 1 auto;
 	&__program-composition {
+		margin-top: 400px;
 	}
 }
 //===================================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
-/* .advantage {
-	padding: 60px 0px;
-	// .advantage__colums
-
-	&__colums {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		gap: 10px;
-		&::before{
-			position: absolute;
-			left: -420px;
-			top: 70px;
-			content: "";
-			width: 2000px;
-			height: 200px;
-			background-color: #FF652F;
-		}
-	}
-	
-	// .advantage__column
-	
-	&__column {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 19%;
-		background: #3da9c9;
-		height: 350px;
-		padding: 50px 20px;
-		border-radius: 20px;
-		color: #FFf;
-		z-index: 2;
-		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-	}
-
-	// .advantage__img
-
-	&__img img{
-		width: 130px;
-		margin-bottom: 20px;
-	}
-
-	// .advantage__text
-
-	&__text {
-		font-size: 25px;
-		text-align: center;
-		font-weight: 500;
-	}
-}
 
 
 
-
+//============================================================================
 .program-composition {
-	background: #e6eff0;
-	padding: 80px 0px;
+	padding: 80px 0px 80px 0px;
 	// .program-composition__wrapper
 
 	&__wrapper {
@@ -196,13 +146,12 @@ body {
 		
 		}
 	}
-	
+
 	// .program-composition__img
 
 	&__img img{
 		width: 400px;
 	}
-} */
+}
 
 
-//============================================================================
