@@ -1,221 +1,62 @@
-//====================================================================================================
 .header {
-	background: #fff;
+	
 	// .header__content
 
 	&__content {
-		
-	}
-
-	// .header__menu
-
-	&__menu {
-	}
-
-	// .header__links
-
-	&__links {
-		display: flex;
-		li a{
-			border-bottom: 3px solid #FF652F;
-			padding-bottom: 3px;
-			transition: all 0.3s ease 0s;
-			&:hover{
-				
-				border-bottom: 3px solid #3c3f5d;
-				@media (max-width: $md3+px) {
-					border-bottom:none;
-				}
-			}
-		}
-		& > li {
-			padding: 0px 20px; 
-		}
-		
-	}
-
-	// .header__link
-
-	&__link {
-		font-size: 22px;
-		font-weight: 600;
-		color: rgb(197, 189, 189);
-		/* text-shadow: 1px 0px 2px rgb(12, 12, 14); */
-		
+		position: relative;
+	display: block;
+	background-image: url(../img/11.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 1600px;
+	height: 700px;
+	margin: 0 auto;
 	}
 }
-
-.menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 0px;
-
-	// .menu__logo
-
-	&__logo {
-		font-size: 30px;
-		font-weight: 700;
-		color: rgb(197, 189, 189);
-		padding: 10px;
-		text-transform: uppercase;
-		/* text-shadow: 1px 0px 2px rgb(12, 12, 14); */
-	}
-
-	// .menu__icon
-
-	&__icon {
-	}
-
-	// .menu__body
-
-	&__body {
-	}
-}
-
-.button {
-	display: inline-flex;
-	font-size: 30px;
+.logo {
+	font-size: 50px;
 	font-weight: 600;
-	background: #FF652F;
-	padding: 10px 30px;
-	border-radius: 25px;
-	color: white;
-	align-items: center;
-	justify-content: center;
+	padding: 100px 0px 20px 0px;
+	border-bottom: 1px solid #000;
+	display: inline-block;
 	text-transform: uppercase;
-	border: 1px solid #000;
-	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	margin-bottom: 80px;
 }
-
-//=============================================
-
-.intro {
-	background: #f2f2f2;
+.title {
 	position: relative;
-	height: 800px;
-	padding: 70px 0px 0px 0px;
-	
-	&__wrapper {
-		display: flex;
-	}
+	font-size: 60px;
+	font-weight: 800;
+	max-width: 500px;
+	line-height: 1.2em;
+	margin-bottom: 120px;
 	&::before{
-		position: absolute;
 		content: "";
-		height: 1130px;
-		width: calc((100% - 1140px)/2 + 902px);
-		top: 0;
-		left: -200px;
-		background: #ec6843;
-		/* background: #3da9c9; */
-		border-bottom-right-radius: 30px;
-	} 
-	// .intro__info
-
-	&__info {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		height: 450px;
-		width: 580px;
-		background: #3c3f5d;
-		z-index: 2;
-		margin-bottom: 300px;
-		border-radius: 30px;
-		padding: 60px 30px;
-		
-
-	}
-	&__img img {
 		position: absolute;
-		top: 300px;
-		right:400px;
-		width: 700px;
-		height: 500px;
-		border-radius: 30px;
-		box-shadow: 4px 4px 8px 2px rgba(34, 60, 80, 0.29);
-		
-		
-	}
-	// .intro__title
-
-	&__title {
-		font-size: 50px;
-		font-weight: 700;
-		margin-bottom: 50px;
-		color: #FFf;
-		line-height: 70px;
-	}
-
-	// .intro__counter
-
-	&__counter {
-		font-size: 40px;
-		font-weight: 500;
-		margin-bottom: 40px;
-		color: rgb(255, 43, 43);
+		top: 13px;
+		left: -40px;
+		height: 125px;
+		width: 13px;
+		background: #fed85f;
 	}
 }
-.advantage {
-	position: relative;
-	z-index: 1;
-	top: -100px;
-	// .advantage__colums
-
-	&__colums {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		gap: 10px;
-	}
-
-	// .advantage__column
-
-	&__column {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 19%;
-		/* background: #3da9c9; */
-		
-		background: #FFf;
-		height: 350px;
-		padding: 50px 20px;
-		border-radius: 20px;
-		color: #000;
-		z-index: 2;
-		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-	}
-
-	// .advantage__img
-
-	&__img img{
-		width: 80px;
-		margin-bottom: 20px;
-		
-		border-radius: 30px;
-	}
-
-	// .advantage__text
-
-	&__text {
-		font-size: 25px;
-		text-align: center;
-		font-weight: 400;
-		color: #3c3f5d;
-	}
-}
-.intro__sub-text {
-	color: rgb(197, 195, 195);
+.button {
 	text-transform: uppercase;
-	font-size: 30px;
-	font-weight: 300;
-	letter-spacing: 3px;
+	font-size: 40px;
+	font-weight: 600;
+	border: 1px solid;
+	padding: 10px 30px;
+	background-color: #5abcbf;
 }
+
+
+
+
+
 //====================================================================================================
 
 //Burger
-.icon-menu {
+/* .icon-menu {
 	display: none;
 	@media (max-width: $md3+px) {
 		display: block;
@@ -256,5 +97,5 @@
 			}
 		}
 	}
-}
+} */
 
