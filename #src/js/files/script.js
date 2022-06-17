@@ -1,28 +1,14 @@
-let orderItem = document.querySelectorAll('.fuq__text');
-let subtText =document.querySelectorAll('.fuq__sub-text');
-/* subtText.forEach(elem =>{
-	elem.addEventListener('click', IsSwow)
-}) */
+let accordions = document.querySelectorAll('.fuq__item');
 
-
-orderItem.forEach(el=>{
-	el.addEventListener('click', her)
-})
-function her() {
-	let subItem = this.nextElementSibling;
-	console.log(subItem.classList.value);
-	subItem.classList.toggle('show');
-	console.log(subItem.classList[1]);
-	console.log(subItem.target.open);
-	
+for (item of accordions) {
+	item.addEventListener('click', function () {
+		if (this.classList.contains('active')) {
+			this.classList.remove('active');
+		} else {
+			for (el of accordions) {
+				el.classList.remove('active');
+			}
+			this.classList.add('active')
+		}
+	})
 }
-
-
-/* function her() {
-	let subItem = this.nextElementSibling;
-	console.log(subItem.classList.value);
-	subItem.classList.toggle('show');
-	console.log(subItem.classList[1]);
-	console.log(subItem.target.open);
-	
-} */
