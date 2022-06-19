@@ -242,7 +242,7 @@ body {
 }
 //=======================================================================================
 .block-3 {
-	padding: 120px 0px;
+	padding: 80px 0px;
 	// .block-3__wrapper
 
 	&__wrapper {
@@ -334,12 +334,13 @@ body {
 		line-height: 1.3em;
 		margin-bottom: 20px;
 		
+		
 		& span{
-			display: inline-block;
+			display: block;
 			color: red;
 			font-size: 35px;
 			font-weight: 500;
-			background-color: #233b1f;
+			background-color: #beeeb7;
 			margin: 20px 0px;
 			padding: 20px;
 			border-radius: 10px;
@@ -445,7 +446,8 @@ body {
 
 //==================================================================
 .form{
-	height: 800px;
+	
+	background-color: #e5e5e5;
 }
 
 .form {
@@ -453,41 +455,70 @@ body {
 	// .form__wrapper
 
 	&__wrapper {
+		padding: 80px 0px;
+	
+	}
+
+	// .form__container
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	// .form__info
 
 	&__info {
+		max-width: 450px;
 	}
 
-	// .form__info-title
+		// .form__img
 
-	&__info-title {
-	}
-
-	// .form__info-text
-
-	&__info-text {
-	}
+		&__img img{
+			max-width: 400px;
+		}
 
 	// .form__body
 
 	&__body {
+		width: 600px;
+	}
+
+	// .form__item
+
+	&__item {
+		margin-bottom: 40px;
 	}
 
 	// .form__title
 
 	&__title {
+		font-size: 35px;
+		font-weight: 600;
+		margin-bottom: 40px;
 	}
 
 	// .form__input
 
 	&__input {
+		width: 100%;
+		border-radius: 20px;
+		padding: 20px 20px;
 	}
 
 	// .form__button
 
 	&__button {
+		width: 100%;
+		background-color: #6bc75d;
 	}
+}
+textarea.form__input {
+	min-height: 120px;
+	resize: vertical;
+	padding: 20px;
+}
+.form__wrapper .block-3__sub-title {
+	margin-bottom: 60px;
 }
 
