@@ -790,7 +790,9 @@ animate({
 			Element.prototype.msMatchesSelector;
 	}
 })();
-let accordions = document.querySelectorAll('.fuq__item');
+
+function acc (){
+	let accordions = document.querySelectorAll('.fuq__item');
 
 for (item of accordions) {
 	item.addEventListener('click', function () {
@@ -804,6 +806,11 @@ for (item of accordions) {
 		}
 	})
 }
+
+}
+acc()
+//============================================================
+
 
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
